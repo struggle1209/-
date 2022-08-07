@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 160px;
+            height: 24px;
+            line-height: 24px;
+            border: 1px solid red;
+            margin: 100px auto;
+        }
+        
+        .now {
+            position: relative;
+            float: left;
+            width: 90px;
+            /* 添加height100%后，background-color能够铺满背景 */
+            height: 100%;
+            background-color: red;
+            text-align: center;
+            color: #fff;
+            font-weight: 700;
+            margin-right: 8px;
+        }
+        /* 右边小三角做法 */
+        
+        .now i {
+            position: absolute;
+            top: 0;
+            right: 0px;
+            width: 0;
+            height: 0;
+            /* 边框，宽度，样式复合写法 */
+            border-color: transparent #fff transparent transparent;
+            border-width: 24px 15px 0 0;
+            border-style: solid;
+        }
+        
+        .origin {
+            font-size: 12px;
+            color: gray;
+            /* 删除线 */
+            text-decoration: line-through;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="box">
+        <span class="now">
+            ￥1650
+            <i></i>
+        </span>
+        <span class="origin">￥4280</span>
+    </div>
+
+</body>
+
+</html>

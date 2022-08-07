@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 表单标签</title>
+</head>
+
+<body>
+    <form action="url地址" method="post">
+        <!-- input是一个输入标签有不同的类型值 -->
+        用户名：<input type="text" name="usename" value="请输入用户名" maxlength="6"> <br> 密码：
+        <input type="password" name="password"> <br>
+        <!-- radio 是单选按钮可以实现多选一,如果不能实现加上name='1'  -->
+        <!-- 单选按钮和复选框都可以设置checkedd属性，当页面打开时候可以默认选择 -->
+        性别： 男<input type="radio" name="1" value="男"> 女<input type="radio" name="1" value="女"> <br>
+        <!-- checkbox是一个复选框，可以实现多哦  -->
+        <!-- value值一般是用来后台抓数据时需要用的 -->
+        爱好： 吃饭<input type="checkbox" value="吃饭"> 睡觉<input type="checkbox" value="睡觉"> 写代码<input type="checkbox" value="写代码"> <br>
+        <!-- submit是体检按钮 -->
+        <input type="submit" value="免费注册"><br>
+        <!-- reset是重置按钮 -->
+        <input type="reset" value="重新填写"> <br>
+        <!-- 普通按钮是button。后期结合javascrip配合使用 -->
+        <input type="button" value="免费获取验证码"> <br>
+        <!-- file是文件域，用来上传文件 -->
+        上传头像: <input type="file"> <br>
+        <!-- labei标签绑定表单元素，将光标定过去，增加用户体验 -->
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+    <form>
+        <!-- for的值和ID的值需要相同 -->
+        <label for="into">用户名</label> <input type="text" id="into"> <br>
+        <label for="1">男</label> <input type="radio" id="1" name="sex">
+        <label for="2">女</label> <input type="radio" id="2" name="sex">
+    </form>
+    <form name="lianxi" method="get" aaction="url地址">
+        <!-- select下拉表单元素 -->
+        籍贯：
+        <select>
+            <option>---</option>
+            <option>西安</option>
+            <option>重庆</option>
+            <option>火星</option>
+        </select> 学科：
+        <select>
+            <option>---</option>
+            <option>英语</option>
+            <option>数学</option>
+            <!-- 默认选项写法 -->
+        </select>
+
+
+    </form>
+    <form action="url地址" name="1" method="get">
+        <!-- textarea文本域 -->
+        给我们的建议：<br>
+        <textarea>
+            pink老师，我知道这个文本域是用textarea做的
+     </textarea>
+        <br> <input type="submit" value="提交">
+    </form>
+
+
+</body>
+
+</html>

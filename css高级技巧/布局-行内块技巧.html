@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+        
+        .box {
+            /* 给父亲添加text-align: center可以是行内的元素水平居中对齐显示，并且行内块元素之间是有一定的距离的 */
+            text-align: center;
+        }
+        
+        .box a {
+            display: inline-block;
+            width: 36px;
+            height: 36px;
+            line-height: 36px;
+            background-color: #f7f7f7;
+            border: 1px solid blueviolet;
+            text-decoration: none;
+            color: #333;
+            text-align: center;
+        }
+        
+        .box .prev {
+            width: 85px;
+        }
+        
+        .box .next {
+            width: 85px;
+        }
+        
+        .box .curter {
+            background-color: #fff;
+            border: 0;
+        }
+        
+        .box .not {
+            background-color: #fff;
+            border: 0;
+        }
+        
+        .box input {
+            width: 45px;
+            height: 36px;
+            border: 1px solid #ccc;
+            /* 取消轮廓线 */
+            outline: none;
+        }
+        
+        .box button {
+            border: 1px solid blueviolet;
+            width: 36px;
+            height: 36px;
+            background-color: #f7f7f7;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <a href="#" class="prev">上一页&lt;&lt;</a>
+        <!-- 注意中间的符号 -->
+        <a href="#" class="curter">2</a>
+        <a href="#">3</a>
+        <a href="#">4</a>
+        <a href="#">5</a>
+        <a href="#">6</a>
+        <a href="#" class="not">....</a>
+        <a href="#" class="next">&gt;&gt;</a> 到第
+        <input type="text">页
+        <button>确定</button>
+    </div>
+</body>
+
+</html>

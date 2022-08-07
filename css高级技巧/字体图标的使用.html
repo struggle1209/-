@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体图标使用</title>
+    <style>
+        /*1.将fonts文件放在根目录下
+          2.使用字体声明代码，代码在style.css文件中
+          3.html标签引入小图标，在下载的文件里边的.demo里面对应图标下复制对应的图标方框
+          4.给span声明字体font-family*/
+        /* css字体声明代码： */
+        /* 引入字体图标 */
+        
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?cvz0bm');
+            src: url('fonts/icomoon.eot?cvz0bm#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?cvz0bm') format('truetype'), url('fonts/icomoon.woff?cvz0bm') format('woff'), url('fonts/icomoon.svg?cvz0bm#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        
+        span {
+            font-family: 'icomoon';
+            font-size: 50px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <span></span>
+    <span></span>
+</body>
+
+</html>

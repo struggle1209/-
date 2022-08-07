@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        ul li {
+            position: relative;
+            float: left;
+            list-style: none;
+            width: 150px;
+            height: 200px;
+            margin-left: -1px;
+            border: 1px solid blueviolet;
+        }
+        
+        ul li:hover {
+            /* 1.添加相对定位（相对定位占有位置） */
+            /* 2.如果盒子已经有了定位则使用z-index属性 */
+            border: 1px solid rgb(50, 226, 64);
+            z-index: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+    </ul>
+</body>
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vertical-align多属性对齐</title>
+    <style>
+        /* vertical-align 只能用于行内元素或者行内块元素 */
+        /* vertical-align: bottom;   底线对齐 */
+        /* vertical-align: middle;   中线对齐 */
+        /* vertical-align: top;      顶部对齐 */
+        
+        textarea {
+            vertical-align: middle;
+            outline: none;
+            resize: none;
+        }
+        
+        img {
+            vertical-align: middle;
+        }
+        
+        .box {
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 1.图片和文字的使用 -->
+    <img src="image/q.jpg" alt=""> qiuee聚合物牛皮革
+    <br>
+    <!-- 2.在文本域中使用 -->
+    <textarea name="" id="" cols="30" rows="10"></textarea> 请您留言
+    <!-- 3.vertival-align解决图片底部默认空白间隙问题 
+    只需要vrtitcal-align不是基线对齐就可以-->
+    <div class="box">
+        <img src="image/q.jpg" alt="">pink老师
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css三角做法</title>
+    <style>
+        /* 原理 */
+        
+        .box1 {
+            width: 0;
+            height: 0;
+            border-left: 10px solid pink;
+            border-right: 10px solid greenyellow;
+            border-bottom: 10px solid blueviolet;
+            border-top: 10px solid red;
+        }
+        /* 做法 */
+        
+        .box2 {
+            width: 0;
+            height: 0;
+            /* 小三角的大小取决于border里面的px */
+            border: 50px solid transparent;
+            /* 三角指向方向和border-方向相反 */
+            /* 第一次的border决定宽度 */
+            /* 第二次的样式引入决定高度 */
+            border-bottom: 50px solid blueviolet;
+        }
+        
+        .box3 {
+            width: 0;
+            height: 0;
+            border: 50px solid transparent;
+            border-left: 50px solid greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+</body>
+
+</html>

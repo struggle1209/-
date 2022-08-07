@@ -1,0 +1,422 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+/* 1.确定版心也就是显示的宽度 */
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+body {
+    background-color: #f3f5f7;
+}
+
+
+/* 2.头部模块 */
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clearfix::after {
+    content: '';
+    display: block;
+    clear: both;
+    height: 0;
+    visibility: hidden;
+}
+
+.header {
+    height: 42px;
+    /* 注意：这里涉及到层叠性 */
+    margin: 30px auto;
+}
+
+.logo {
+    float: left;
+    width: 198px;
+    height: 42px;
+}
+
+.nav {
+    float: left;
+    margin-left: 40px;
+}
+
+.nav li {
+    float: left;
+    /* 这里的写法块与块之间的间距是30px。左右边距取15px */
+    padding: 0 15px;
+}
+
+.nav ul li a {
+    display: block;
+    height: 42px;
+    line-height: 42px;
+    /* 重点：为了里边的内容能够撑开盒子所以给定一个左边距，同时转换为块元素当鼠标指定 */
+    padding: 0 10px;
+    font-size: 18px;
+    color: #050505;
+}
+
+.nav ul li a:hover {
+    /* 伪元素写给a链接，伪元素会根据a里边的内容的大小调节下边框 */
+    /* 当伪元素写给li之后则会统一下边距的伪元素 */
+    border-bottom: 2px solid #00a4ff;
+}
+
+.search {
+    float: left;
+    width: 412px;
+    height: 42px;
+    margin-left: 50px;
+}
+
+.search input {
+    float: left;
+    width: 345px;
+    height: 40px;
+    border: 1px solid #00a4ff;
+    border-right: 0;
+    color: bfbfbf;
+    font-size: 14px;
+    /* 这里的padding-left给定值是因为文字的缩进，此时会撑大盒子，所以需要从上边360px减去 */
+    padding-left: 15px;
+}
+
+.search button {
+    float: left;
+    width: 50px;
+    height: 42px;
+    /* button默认有一个边框需要去掉边框 */
+    border: 0;
+    background-image: url(img/fa-search.jpg);
+}
+
+.user {
+    float: right;
+    padding-right: 50px;
+}
+
+.user img {
+    vertical-align: middle;
+}
+
+.user span {
+    color: #7e7e7f;
+    font-size: 14px;
+}
+
+
+/* banner:广告 */
+
+.banner {
+    height: 420px;
+    background-color: #1c036c;
+}
+
+.banner .w {
+    height: 420px;
+    background-image: url(img/banner2.jpg);
+}
+
+
+/* 侧导航栏subnav */
+
+.subnav {
+    float: left;
+    width: 190px;
+    height: 420px;
+    background-color: #14024b;
+}
+
+.subnav ul li {
+    height: 45px;
+    line-height: 45px;
+    padding: 0 20px;
+}
+
+.subnav ul li a {
+    font-size: 14px;
+    color: #ffffff;
+}
+
+.subnav ul li a:hover {
+    color: #0393d9;
+}
+
+.subnav ul li a span {
+    float: right;
+}
+
+.banner .course {
+    float: right;
+    width: 230px;
+    height: 300px;
+    margin-top: 50px;
+    background-color: #fff;
+}
+
+.course h2 {
+    height: 48px;
+    line-height: 48px;
+    background-color: #9bceea;
+    font-size: 18px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.course .bd {
+    height: 230px;
+    padding-left: 0 20px;
+    padding: 0 20px;
+}
+
+.bd ul li {
+    padding: 10px 0;
+    border-bottom: 1px solid #eaeaea;
+}
+
+.course .bd ul li h4 {
+    font-weight: 400;
+    font-size: 16px;
+    color: #5a5a5a;
+}
+
+.course .bd ul li p {
+    font-size: 12px;
+    color: #a5a5a5;
+}
+
+.bd .more {
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    text-decoration: none;
+    color: #00a4ff;
+    border: 1px solid #00a4ff;
+    font-size: 16px;
+    font-weight: 700;
+    margin-top: 5px;
+    text-align: center;
+}
+
+.commend {
+    height: 60px;
+    line-height: 60px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 3px 3px rgba(0, 0, 0, 0.2);
+    margin-top: 10px;
+}
+
+.goods {
+    float: left;
+    /* padding: 0 32px;
+    这种写法会撑大盒子 */
+}
+
+.goods h3 {
+    /* 给定会h3一个外边距这样的做法就不会撑大盒子 */
+    color: #6bbfff;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 32px;
+}
+
+.goods-item {
+    float: left;
+}
+
+.goods-item ul {
+    margin-left: 30px;
+}
+
+.goods-item ul li {
+    float: left;
+    color: #6d6d6d;
+}
+
+.goods-item ul li a {
+    font-size: 16px;
+    color: #454545;
+    /* 下边是我不会的内容 */
+    padding: 0 30px;
+    border-left: 1px solid #bfbfbf;
+}
+
+.mod {
+    float: right;
+    /* padding-right: 25px;
+    这种写法会撑大盒子 */
+}
+
+.mod span {
+    color: #00a4ff;
+    font-size: 14px;
+    margin-right: 32px;
+}
+
+.box {
+    margin-top: 30px;
+}
+
+.box .hd {
+    height: 45px;
+    line-height: 45px;
+}
+
+.box .hd h3 {
+    float: left;
+    font-size: 20px;
+    font-weight: 400;
+    color: #494949;
+}
+
+.box .hd a {
+    float: right;
+    font-size: 12px;
+    color: #a5a5a5;
+    /* padding-right这种写法不会撑大盒子，在前边的案例中有写 */
+    padding-right: 30px;
+}
+
+
+/* 把li的父亲修改的足够的宽就能装五个盒子不换行 */
+
+.box .bd ul {
+    width: 1225px;
+}
+
+.box .bd ul li {
+    float: left;
+    width: 228px;
+    height: 270px;
+    background-color: #fff;
+    box-shadow: 2px 3px 2px 2px rgba(0, 0, 0, 0.2);
+    margin-right: 14px;
+    margin-bottom: 15px;
+}
+
+
+/* 解决图片宽度问题 */
+
+.box .bd ul li img {
+    width: 100%;
+}
+
+.bd ul li h4 {
+    color: #050505;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.bd ul li p {
+    font-size: 12px;
+    color: #999999;
+    padding: 7px 20px 0 22px;
+}
+
+.bd ul li p span {
+    color: #ff7c2d;
+}
+
+.footer {
+    height: 400px;
+    padding-top: 40px;
+}
+
+.copyleft {
+    float: left;
+}
+
+.copyleft p {
+    color: #666666;
+    font-size: 12px;
+    padding-top: 20px;
+}
+
+.copyleft a {
+    display: block;
+    width: 120px;
+    height: 35px;
+    line-height: 35px;
+    border: 1px solid #00a4ff;
+    margin-top: 16px;
+    text-align: center;
+    color: #00a4ff;
+}
+
+.links {
+    float: right;
+}
+
+.links .left {
+    float: left;
+    margin-left: 140px;
+}
+
+.links .center {
+    float: left;
+    margin-left: 140px;
+}
+
+.links .right {
+    float: right;
+    margin: 0 30px 0 140px;
+}
+
+.links dl dt {
+    color: #7d7d7d;
+    font-size: 16px;
+}
+
+.links dl dt a {
+    color: #333333;
+}
+
+.links dl dd a {
+    color: #333333;
+    font-size: 12px;
+}
+
+
+/* .date {
+    height: 445px;
+    background-color: pink;
+}
+
+.top {
+    float: center;
+    height: 48px;
+    background-color: skyblue;
+}
+
+.date .leftnav {
+    float: left;
+    width: 230px;
+    height: 390px;
+}
+
+.date .leftnav img {
+    width: 100%;
+    height: 100%;
+}
+
+.date .topnav {
+    float: center;
+    width: 955px;
+    height: 105px;
+}
+
+.date .topnav img {
+    width: 100%;
+    height: 100%;
+} */

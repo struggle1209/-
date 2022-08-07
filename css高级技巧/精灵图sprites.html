@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>精灵图sprites</title>
+    <!-- 原因：有效的减少服务器发送和接受请求的次数,提高页面的加载速度 -->
+    <!-- 特点
+    1.主要针对小的背景图片使用
+    2.借助背景位置实现backgroung-positon
+    3.一般情况下精灵图都是负值（页面中向下是y轴正方向，向右是x轴的正方向，后退是负值）
+    4.切图的坐标是从最左上角为坐标点计算 -->
+    <style>
+        .box1 {
+            width: 59px;
+            height: 59px;
+            background: url(image/sprites.png);
+            margin: 50px auto;
+            /* 是图片往左走，所以是负值 */
+            background-position: -182px 0;
+        }
+        
+        .box2 {
+            width: 25px;
+            height: 26px;
+            background: url(image/sprites.png);
+            /* 先向左拉，在向上拉 */
+            background-position: -156px -104px;
+            margin: 200px;
+        }
+        
+        .box3 {
+            width: 235px;
+            height: 109px;
+            background: url(image/sprites.png);
+            background-position: 0 -348px;
+            margin: 100px;
+        }
+        
+        .box4 {
+            width: 235px;
+            height: 109px;
+            background: url(image/sprites.png);
+            background-position: 0 -462px;
+            margin: 30px;
+        }
+        
+        .box5 {
+            width: 20px;
+            height: 18px;
+            background: url(image/sprites.png);
+            background-position: -249px -85px;
+        }
+        
+        .box6 {
+            width: 26px;
+            height: 23px;
+            background: url(image/sprites.png);
+            background-position: 0 -183px;
+            margin: 100px;
+        }
+        
+        .box7 {
+            width: 23px;
+            height: 25px;
+            background: url(image/sprites.png);
+            background-position: 0 -145px;
+        }
+        
+        .box8 {
+            width: 26px;
+            height: 24px;
+            background: url(image/sprites.png);
+            background-position: 0 -105px;
+            margin: 100px;
+        }
+        
+        .box9 {
+            width: 15px;
+            height: 16px;
+            background: url(image/sprites.png);
+            background-position: -257px -40px;
+            margin: 100px;
+        }
+        
+        .box10 {
+            width: 18px;
+            height: 18px;
+            background: url(image/sprites.png);
+            background-position: -140px -38px;
+            margin: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1"></div>
+    <div class="box2"></div>
+    <div class="box3"></div>
+    <div class="box4"></div>
+    <div class="box5"></div>
+    <div class="box6"></div>
+    <div class="box7"></div>
+    <div class="box8"></div>
+    <div class="box9"></div>
+    <div class="box10"></div>
+</body>
+
+</html>

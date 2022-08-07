@@ -1,0 +1,357 @@
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .w {
+        width: 1200px;
+        margin: 0 auto;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    li {
+        list-style: none;
+    }
+    
+    .clearfix::after {
+        content: '';
+        display: block;
+        clear: both;
+        height: 0;
+        visibility: hidden;
+    }
+    
+    body {
+        background-color: #f3f5f7;
+    }
+    
+    .head {
+        height: 45px;
+        line-height: 45px;
+    }
+    
+    .head .logo {
+        float: left;
+        width: 195px;
+        height: 45px;
+    }
+    
+    .head .nav {
+        float: left;
+        margin-left: 60px;
+    }
+    
+    .head .nav ul li {
+        float: left;
+        /* 记住下面的这一种写法padding,具体的在注释中 */
+        padding: 0 15px;
+    }
+    
+    .head .nav ul li a {
+        display: block;
+        height: 42px;
+        line-height: 42px;
+        font-size: 18px;
+        color: #050505;
+    }
+    
+    .head .nav ul li a:hover {
+        /* 伪元素写给a链接，伪元素会根据里面的内容自动调节 */
+        border-bottom: 2px solid #00a4ff;
+    }
+    
+    .head .search {
+        float: left;
+        width: 412px;
+        height: 42px;
+        margin-left: 60px;
+    }
+    
+    .head .search input {
+        float: left;
+        width: 345px;
+        height: 42px;
+        color: #cececf;
+        font-size: 14px;
+        border: 1px solid #00a4ff;
+        border-right: 0;
+        padding-left: 15px;
+    }
+    
+    .head .search button {
+        float: left;
+        width: 50px;
+        height: 42px;
+        border: 0;
+        /* button默认有一个边框 */
+        background-image: url(img/fa-search.jpg);
+    }
+    
+    .head .user {
+        float: right;
+        padding-right: 50px;
+    }
+    
+    .head .user img {
+        vertical-align: middle;
+    }
+    
+    .banner {
+        height: 420px;
+        background-color: #1c036c;
+    }
+    
+    .banner .w {
+        height: 420px;
+        background-image: url(img/banner2.jpg);
+    }
+    /* 侧边栏模块 */
+    
+    .subnav {
+        float: left;
+        width: 190px;
+        height: 420px;
+        background-color: #13014b;
+    }
+    
+    .subnav ul li {
+        height: 45px;
+        line-height: 45px;
+        padding: 0 20px;
+    }
+    
+    .subnav ul li a {
+        color: #bab8c4;
+        font-size: 14px;
+    }
+    
+    .subnav ul li a:hover {
+        color: #0681c4;
+    }
+    
+    .subnav ul li a span {
+        float: right;
+    }
+    
+    .course {
+        float: right;
+        margin-top: 50px;
+        background-color: #ffffff;
+        width: 230px;
+        height: 300px;
+    }
+    
+    .course .head {
+        height: 50px;
+        line-height: 50px;
+        background-color: skyblue;
+    }
+    
+    .course .head h4 {
+        font-size: 18px;
+        color: #ffffff;
+        padding-left: 60px;
+    }
+    
+    .course .body ul li {
+        border-bottom: 1px solid #efefef;
+        padding: 10px 20px;
+    }
+    
+    .course .body ul li h4 {
+        font-size: 16px;
+        font-weight: 400;
+        color: #5a5a5a;
+    }
+    
+    .course .body ul li p {
+        font-size: 14px;
+        color: #bdbdbd;
+    }
+    
+    .course .body .box a {
+        display: block;
+        width: 198px;
+        height: 38px;
+        line-height: 38px;
+        border: 2px solid #00a4ff;
+        text-align: center;
+        color: #00a4ff;
+        font-size: 16px;
+        margin: 0 16px;
+        margin-top: 5px;
+    }
+    
+    .commend {
+        height: 60px;
+        line-height: 60px;
+        margin-top: 10px;
+        background-color: #fff;
+        box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    }
+    
+    .commend .goods {
+        float: left;
+        /* 此时不能用margin应该使用padding */
+    }
+    
+    .commend .goods h3 {
+        color: #00a4ff;
+        font-size: 16px;
+        font-weight: 400;
+        margin-left: 30px;
+    }
+    
+    .commend .goods-item ul li {
+        float: left;
+        margin-left: 30px;
+    }
+    
+    .commend .goods-item ul li a {
+        font-size: 16px;
+        color: #454545;
+        padding-left: 30px;
+        border-left: 1px solid #bfbfbf;
+    }
+    
+    .commend .mod {
+        float: right;
+    }
+    
+    .commend .mod span {
+        color: #00a4ff;
+        font-size: 14px;
+        margin-right: 30px;
+    }
+    
+    .box {
+        margin-top: 10px;
+    }
+    
+    .box .hd {
+        height: 45px;
+        line-height: 45px;
+    }
+    
+    .box .hd h3 {
+        float: left;
+        font-size: 20px;
+        color: #494949;
+        font-weight: 400;
+    }
+    
+    .box .hd a {
+        float: right;
+        font-size: 12px;
+        color: #a5a5a5;
+        /* padding加给子元素 */
+        padding-right: 20px;
+        /* }这里添加右边距不需要重新指定，只需要给定ul的width就可以了 */
+    }
+    
+    .box .bd ul {
+        width: 1215px;
+        margin-top: 10px;
+        background-color: #ffffff;
+    }
+    
+    .box .bd ul li {
+        float: left;
+        width: 228px;
+        height: 270px;
+        /* 这里添加右边距不需要重新指定，只需要给定ul的width就可以了 */
+        margin-right: 15px;
+        margin-bottom: 15px;
+        box-shadow: 1px 2px 2px 2px rgba(0, 0, 0, 0.2);
+        /* 父相 */
+        position: relative;
+    }
+    
+    .box .bd ul li em {
+        /* 子绝 */
+        position: absolute;
+        top: 4px;
+        right: -4px;
+    }
+    
+    .box .bd ul li h4 {
+        font-size: 14px;
+        color: #050505;
+        font-weight: 400;
+        padding: 20px;
+    }
+    
+    .box .bd ul li p {
+        font-size: 12px;
+        color: #999999;
+    }
+    
+    .box .bd ul li p span {
+        color: #ff7c2d;
+        padding: 0 20px;
+    }
+    
+    .footer {
+        height: 418px;
+        background-color: #fff;
+        margin-top: 30px;
+    }
+    
+    .footer .copyleft {
+        float: left;
+        margin-top: 30px;
+    }
+    
+    .footer .copyleft .logo {
+        margin-bottom: 30px;
+    }
+    
+    .footer .copyright p {
+        font-size: 12px;
+        color: #666666;
+    }
+    
+    .footer .copyleft a {
+        display: block;
+        width: 118px;
+        height: 34px;
+        line-height: 34px;
+        color: #00a4ff;
+        font-size: 16px;
+        border: 1px solid #00a4ff;
+        margin-top: 15px;
+        padding-left: 30px;
+    }
+    
+    .links {
+        float: right;
+        margin-top: 30px;
+    }
+    
+    .footer .links dl dt a {
+        font-size: 16px;
+        color: #b3b3b3;
+    }
+    
+    .footer .links dl dd a {
+        color: #333333;
+        font-size: 12px;
+    }
+    
+    .footer .links .left {
+        float: left;
+        margin-right: 120px;
+    }
+    
+    .footer .links .center {
+        float: left;
+        margin-right: 120px;
+    }
+    
+    .footer .links .right {
+        float: left;
+        margin-right: 30px;
+    }

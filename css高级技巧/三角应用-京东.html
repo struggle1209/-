@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>京东效果</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        .box1 {
+            position: relative;
+            width: 150px;
+            height: 300px;
+            background-color: rgb(145, 138, 129);
+            margin: 100px;
+        }
+        
+        .box2 {
+            position: absolute;
+            top: -20px;
+            /* 居中效果给定的是绝对定位的盒子 */
+            left: 50%;
+            margin-left: -5px;
+            width: 0;
+            height: 0;
+            border: 10px solid transparent;
+            border-bottom: 10px solid blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box1">
+        <div class="box2"></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>字体图标的追加</title>
+    <style>
+        /* 添加新的字体图标到原来的文件
+        把字体图标里面的selection.json文件重新上传即可
+        这里的fonts文件也需要删除重新添加 */
+        
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?cvz0bm');
+            src: url('fonts/icomoon.eot?cvz0bm#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?cvz0bm') format('truetype'), url('fonts/icomoon.woff?cvz0bm') format('woff'), url('fonts/icomoon.svg?cvz0bm#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+        
+        span {
+            font-family: 'icomoon';
+            font-size: 100px;
+            color: blueviolet;
+        }
+    </style>
+</head>
+
+<body>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+    <span></span>
+</body>
+
+</html>

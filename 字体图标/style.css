@@ -1,0 +1,173 @@
+@font-face {
+  font-family: 'icomoon';
+  src:  url('fonts/icomoon.eot?z4jt54');
+  src:  url('fonts/icomoon.eot?z4jt54#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.ttf?z4jt54') format('truetype'),
+    url('fonts/icomoon.woff?z4jt54') format('woff'),
+    url('fonts/icomoon.svg?z4jt54#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-airplayaudio:before {
+  content: "\e900";
+}
+.icon-analogue:before {
+  content: "\e901";
+}
+.icon-android:before {
+  content: "\e902";
+  color: #3ddc84;
+}
+.icon-archiveofourown:before {
+  content: "\e903";
+  color: #900;
+}
+.icon-codeship:before {
+  content: "\e904";
+  color: #3c4858;
+}
+.icon-deezer:before {
+  content: "\e905";
+  color: #feaa2d;
+}
+.icon-deliveroo:before {
+  content: "\e906";
+  color: #00ccbc;
+}
+.icon-electron:before {
+  content: "\e907";
+  color: #47848f;
+}
+.icon-f-droid:before {
+  content: "\e908";
+  color: #1976d2;
+}
+.icon-html5:before {
+  content: "\e909";
+  color: #e34f26;
+}
+.icon-safari:before {
+  content: "\e90a";
+}
+.icon-shopify:before {
+  content: "\e90b";
+  color: #7ab55c;
+}
+.icon-skyliner:before {
+  content: "\e90c";
+  color: #2fcea0;
+}
+.icon-strapi:before {
+  content: "\e90d";
+  color: #2e7eea;
+}
+.icon-tails:before {
+  content: "\e90e";
+  color: #56347c;
+}
+.icon-apacherocketmq:before {
+  content: "\e910";
+  color: #d77310;
+}
+.icon-asana:before {
+  content: "\e911";
+}
+.icon-awesomewm:before {
+  content: "\e912";
+  color: #535d6c;
+}
+.icon-bathasu:before {
+  content: "\e913";
+  color: #00a3e0;
+}
+.icon-centos:before {
+  content: "\e914";
+  color: #262577;
+}
+.icon-coffeescript:before {
+  content: "\e915";
+}
+.icon-expo:before {
+  content: "\e916";
+}
+.icon-gimp:before {
+  content: "\e917";
+  color: #5c5543;
+}
+.icon-googleplay:before {
+  content: "\e918";
+  color: #607d8b;
+}
+.icon-haxe:before {
+  content: "\e919";
+  color: #ea8220;
+}
+.icon-helm:before {
+  content: "\e91a";
+  color: #277a9f;
+}
+.icon-htmlacademy:before {
+  content: "\e91c";
+  color: #302683;
+}
+.icon-intellijidea:before {
+  content: "\e91d";
+}
+.icon-java:before {
+  content: "\e91e";
+  color: #007396;
+}
+.icon-jupyter:before {
+  content: "\e91f";
+  color: #f37626;
+}
+.icon-quill:before {
+  content: "\e90f";
+}
+.icon-connection:before {
+  content: "\e91b";
+}
+.icon-file-zip:before {
+  content: "\e92b";
+}
+.icon-qrcode:before {
+  content: "\e938";
+}
+.icon-binoculars:before {
+  content: "\e985";
+}
+.icon-airplane:before {
+  content: "\e9af";
+}
+.icon-truck:before {
+  content: "\e9b0";
+}
+.icon-exit:before {
+  content: "\ea14";
+}
+.icon-make-group:before {
+  content: "\ea58";
+}
+.icon-tux:before {
+  content: "\eabd";
+}
+.icon-file-openoffice:before {
+  content: "\eae0";
+}
